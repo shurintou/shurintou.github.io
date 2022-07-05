@@ -36,7 +36,7 @@ function build(){
             fi
         fi
     done
-    cp -r ../my-blog/build/* ./
+    cp -r $1/* ./
     rm 404.html
     cp index.html 404.html
 }
