@@ -14,24 +14,30 @@ function build(){
             # media dir need handle manually
             if [ ${dirPath} != 'media' ]
             then
-                for sourceFile in $1/static/$dirPath/*
+                for targetFile in static/$dirPath/*
                     do
-                    sourceFullFilename=${sourceFile##*/} # main.50e7c4e3.js
-                    sourceFilename=${sourceFullFilename%%.*} # main
-                    sourceHash="getHash $sourceFullFilename"  # 50e7c4e3
-                    sourceFiletype=${sourceFullFilename##*.} # js
-                    for targetFile in static/$dirPath/*
+                    matchedFlag=0
+                    targetFullFilename=${targetFile##*/}
+                    targetFilename=${targetFullFilename%%.*}
+                    targetHash="getHash $targetFullFilename"
+                    targetFiletype=${targetFullFilename##*.}
+                    for sourceFile in $1/static/$dirPath/*
                         do
-                        targetFullFilename=${targetFile##*/}
-                        targetFilename=${targetFullFilename%%.*}
-                        targetHash="getHash $targetFullFilename"
-                        targetFiletype=${targetFullFilename##*.}
-                        if [[ ${targetFilename} == ${sourceFilename} && ${sourceFiletype} == ${targetFiletype} && ${targetHash} != ${sourceHash} ]]
-                        then
-                            git mv ${targetFile} static/$dirPath/${sourceFullFilename}
-                            break
-                        fi
+                        sourceFullFilename=${sourceFile##*/} # main.50e7c4e3.js
+                        sourceFilename=${sourceFullFilename%%.*} # main
+                        sourceHash="getHash $sourceFullFilename"  # 50e7c4e3
+                        sourceFiletype=${sourceFullFilename##*.} # js
+                            if [[ ${targetFilename} == ${sourceFilename} && ${sourceFiletype} == ${targetFiletype} && ${targetHash} != ${sourceHash} ]]
+                            then
+                                matchedFlag=1
+                                git mv ${targetFile} static/$dirPath/${sourceFullFilename}
+                                break
+                            fi
                     done
+                    if [ ${matchedFlag} == 0 ] # no match file, delete it.
+                    then
+                        rm -f $targetFile
+                    fi
                 done
             fi
         fi
@@ -41,5 +47,5 @@ function build(){
     cp index.html 404.html
 }
 # parameter: the dir of built source code 
-build ../my-blog/build 
-
+buildFolderPath=../my-blog/build 
+build $buildFolderPath 
