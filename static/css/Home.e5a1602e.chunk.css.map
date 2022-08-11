@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/Home.e5a1602e.chunk.css","mappings":"AAAA,sBACI,eAAgB,CAChB,4BACJ","sources":["pages/home/index.module.css"],"sourcesContent":[".homeText {\n    font-size: 1.5em;\n    margin-bottom: 0.7em !important;\n}"],"names":[],"sourceRoot":""}
