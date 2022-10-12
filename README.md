@@ -17,6 +17,9 @@ The project can config design theme by using [craco](https://ant.design/docs/rea
 ### Database-free
 All posts of the blog are stored as [Github issue](https://github.com/shurintou/shurintou.github.io/issues), and comments are synchronized by [Gitalk](https://github.com/gitalk/gitalk). 
 
+### Trilingual contents
+The UI parts of the blog can be displayed in three languages(`English`, `Simplified Chinese` and `Japanese`) by changing the setting, and each languages has its original post contents.
+
 ## :key:How does it work ?
 
 This project is automatically deployed by [Github Pages](https://pages.github.com/).
