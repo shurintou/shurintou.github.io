@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/Home10.f57cf1fc.chunk.css","mappings":"AAAA,wCACI,QACJ,CAEA,8BACI,eACJ","sources":["components/others/markdown/index.module.css"],"sourcesContent":[".pTagInsideBlockquote p {\n    margin: 0\n}\n\n.textFontSize {\n    font-size: 1.2em;\n}"],"names":[],"sourceRoot":""}
