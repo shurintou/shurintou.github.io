@@ -23,7 +23,3 @@
  * @namespace
  * @public
  */
-
-//! moment.js
-
-//! moment.js locale configuration
