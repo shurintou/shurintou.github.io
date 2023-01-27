@@ -20,11 +20,11 @@ All posts of the blog are stored as [Github issue](https://github.com/shurintou/
 ### Trilingual contents
 The UI parts of the blog can be displayed in three languages(`English`, `Simplified Chinese` and `Japanese`) by changing the setting, and each languages has its original post contents.
 
-### Trilingual contents
-The UI parts of the blog can be displayed in three languages(`English`, `Simplified Chinese` and `Japanese`) by changing the setting, and each languages has its original post contents.
-
 ### SPA with browserHistory
 Though the project is developed as a single page application(`SPA`), the browserHistory can totally work at each operation you have made, and copying an URL can get the exact same result as the copied one. 
+
+### filter/search posts 
+Posts can be filtered by `categories`(memo, technic, ...), `tags`(Java, Javascript, ...), and `languages`(English, Japanese, Chinese), or searched by any keyword you are interested.
 
 ## :key:How does it work ?
 
