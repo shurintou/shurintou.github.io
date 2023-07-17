@@ -1,4 +1,4 @@
-# Welcome to my blog project !!
+# my blog
 ![react](https://img.shields.io/badge/react-%5E18.0.0-blue) ![antd](https://img.shields.io/badge/antd-%5E4.21.0-red) ![gitalk](https://img.shields.io/badge/gitalk-%5E1.7.2-green) ![markdown](https://img.shields.io/badge/react--markdown-%5E8.0.3-orange) ![typescript](https://img.shields.io/badge/typescript-%5E4.6.3-9cf) ![axios](https://img.shields.io/badge/axios-%5E0.26.1-yellowgreen) ![License](https://img.shields.io/badge/license-MIT-yellow)
 
 :link:**URL: [https://shurintou.github.io](https://shurintou.github.io)**
