@@ -3,6 +3,8 @@
 
 :link:**URL: [https://shurintou.github.io](https://shurintou.github.io)**
 
+![](https://github.com/shurintou/shurintou.github.io/blob/master/image/readme/screenshot.gif)
+
 ## :house:What is it ?
 
 This is my blog project which was developed by [React](https://reactjs.org/) and built by `npm run build`.
